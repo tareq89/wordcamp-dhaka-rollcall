@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Tareq Aziz",
+    "bio": "Project Developmet Manager at weDevs",
+    "phoneNumber": "01771443388",
+    "image": "~/assets/images/Saif_Hassan.jpg",
+    "reportingTime": "",
+    "known": true,
+    "active": true
+  },
+  {
+    "name": "Foysal Zafree",
+    "bio": "",
+    "phoneNumber": "01771443388",
+    "image": "~/assets/images/Saif_Hassan.jpg",
+    "reportingTime": "6:30 am",
+    "known": true,
+    "active": false
+  },
+  {
+    "name": "Foysal Zafree",
+    "bio": "UX Engineer at Deligram",
+    "phoneNumber": "01771443388",
+    "image": "~/assets/images/Saif_Hassan.jpg",
+    "reportingTime": "6:30 am",
+    "known": true,
+    "active": true
+  },
+  {
+    "name": "Shihan Alam",
+    "bio": "UX at Deligram",
+    "phoneNumber": "01771443388",
+    "image": "~/assets/images/Saif_Hassan.jpg",
+    "reportingTime": "6:30 am",
+    "known": true,
+    "active": true
+  }
+]
