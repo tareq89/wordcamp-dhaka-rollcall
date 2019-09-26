@@ -1,0 +1,138 @@
+//  app
+
+.App
+  position: relative
+  width: 100%
+  height: auto
+  min-height: 100%
+  overflow: hidden
+  &__header
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    height: 56px
+    z-index: 999
+    display: flex
+    align-items: center
+    background-color: $white
+  &__main
+    padding-top: 56px
+    padding-bottom: 30px
+    // overflow-y: auto
+
+.Logo
+  height: 36px
+  width: 36px
+  background-color: #F0F0F0
+  border-radius: 36px
+  overflow: hidden
+  margin-left: 20px
+.Heading
+  font-size: 24px
+  font-weight: 700
+  margin-left: 15px
+
+
+.Search
+  padding: 10px 20px
+  &__input
+    // background: transparent
+    border: 0
+    outline: 0
+    padding: 0 20px
+    width: 100%
+    height: 44px
+    background-color: $lighter
+    font-size: 16px
+    border-radius: 30px
+    +placeholder
+      color: #808080
+
+    
+.VolunteerList
+  position: relative
+  height: 1000px
+  $root: &
+  &__item
+    display: flex
+    padding-left: 20px
+    margin-top: 15px
+    &--unknown
+      #{$root}__status
+        &::before
+          background-image: url(~assets/icons/check.svg)
+    &--active
+      #{$root}__name
+        color: #0284FE
+      #{$root}__status
+        &::before
+          background-image: url(~assets/icons/check-fill-active.svg)
+      &#{$root}__item--unknown
+        #{$root}__status
+          &::before
+            background-image: url(~assets/icons/check-active.svg)
+
+
+      
+  &__imageWrapper
+    height: 56px
+    width: 56px
+    background-color: #f0f0f0
+    border-radius: 56px
+    overflow: hidden
+  &__copy
+    flex: 1
+    position: relative
+    display: flex
+    flex-direction: column
+    justify-content: center
+    padding-left: 15px
+    padding-right: 50px
+    overflow: hidden
+
+  &__status
+    height: 56px
+    width: 56px
+    position: relative
+    &::before
+      content: ""
+      position: absolute
+      top: 0
+      right: 0
+      width: 16px
+      height: 16px
+      display: block
+      margin-right: 20px
+      margin-top: 20px
+      background-image: url(~assets/icons/check-fill.svg)
+
+  &__name
+    font-size: 15px
+    color: $black
+    font-weight: 700
+    letter-spacing: -0.01em
+    margin-top: -6px
+    overflow: hidden
+    text-overflow: ellipsis
+    white-space: nowrap
+    text-decoration: none
+    display: block
+  &__bio
+    font-size: 14px
+    color: #9E9E9E
+    line-height: 1.11
+    letter-spacing: -0.015em
+    // overflow: hidden
+    // text-overflow: ellipsis
+    // white-space: nowrap
+  &__reporting
+    font-size: 12px
+    color: #9E9E9E
+    position: absolute
+    right: 0
+    top: 0
+    line-height: 1
+    margin-top: 22px
+
+  

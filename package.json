@@ -1,0 +1,22 @@
+{
+  "name": "wordcamp-rollcall",
+  "version": "1.0.0",
+  "description": "My polished Nuxt.js project",
+  "author": "Muhammed Tareq Aziz",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.3.6",
+    "@nuxtjs/pwa": "^3.0.0-0",
+    "nuxt": "^2.0.0"
+  },
+  "devDependencies": {
+    "node-sass": "4.5.3",
+    "sass-loader": "6.0.6"
+  }
+}
