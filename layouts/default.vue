@@ -18,7 +18,7 @@
                 <img src="assets/images/Saif_Hassan.jpg" alt="Saif Hassan">
               </div>
               <div class="VolunteerList__copy">
-                <a class="VolunteerList__name" href="tel:+8801771443388">Saif Hassan</a>
+                <a class="VolunteerList__name" href="tel:+8801771443388">Saf Hassan</a>
                 <div class="VolunteerList__bio">Project Developmet Manager at weDevs</div>
                 <div class="VolunteerList__reporting">6:30 am</div>
               </div>
