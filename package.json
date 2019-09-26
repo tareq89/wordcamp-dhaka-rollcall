@@ -4,6 +4,9 @@
   "description": "My polished Nuxt.js project",
   "author": "Muhammed Tareq Aziz",
   "private": true,
+  "engines": {
+    "node": "8.16.0"
+  },
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
