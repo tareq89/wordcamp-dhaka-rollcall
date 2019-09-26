@@ -5,7 +5,8 @@
   "author": "Muhammed Tareq Aziz",
   "private": true,
   "engines": {
-    "node": "8.16.0"
+    "node": "8.16.0",
+    "yarn": "1.16.0"
   },
   "scripts": {
     "dev": "nuxt",
