@@ -20,7 +20,6 @@
 <script>
 import Logo from '~/components/Logo.vue'
 import ListItem from '~/components/ListItem.vue'
-import items from '~/store/list.json'
 export default {
   data () {
     return {
@@ -34,9 +33,9 @@ export default {
   computed: {
     items () {
       if (this.searchKey) {
-        return items.filter(a => a.name.toLowerCase().includes(this.searchKey.toLowerCase()))
+        return this.$store.state.items.filter(a => a.name.toLowerCase().includes(this.searchKey.toLowerCase()))
       }
-      return items
+      return this.$store.state.items
     }
   },
   methods: {
