@@ -64,7 +64,7 @@ textarea
   text-align: right
   line-height: 36px
   font-size: 10px
-  // opacity: 0
+  opacity: 0
   select,
   option
     font-size: inherit
@@ -110,8 +110,8 @@ textarea
         #{$root}__status
           &::before
             background-image: url(~assets/icons/check-active.svg)
-      // #{$root}__expectedreporting
-      //   display: none
+      #{$root}__expectedreporting
+        display: none
       
 
 
@@ -174,7 +174,9 @@ textarea
     right: 0
     top: 0
     line-height: 1
-    margin-top: 22px + 15
+    // margin-top: 22px + 15
+    margin-top: 22px
+    text-transform: lowercase
   &__expectedreporting
     font-size: 12px
     color: #9E9E9E

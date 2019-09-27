@@ -10,14 +10,14 @@
           <option v-for="(sortParam, key) of sortParams" :key="key" :value="sortParam.value" :selected="sortParam.selected">{{ sortParam.display }}</option>
         </select>
       </div>
-      <div class="Counter">{{$store.state.items.length}}</div>
+      <div class="Counter">{{items.length}}</div>
     </header>
     <main class="App__main">
       <div class="Search">
         <input class="Search__input" placeholder="Search" type="text" @input="updateSearchKey">
       </div>
       <div class="VolunteerList" id="VolunteerList">
-        <list-item div v-for="(item, key) in items" :key="key" :item="item" :index="key" @toggleActivate="activeItem"></list-item>
+        <list-item div v-for="(item, key) in items" :key="key" :item="item" @toggleActivate="activeItem"></list-item>
       </div>
     </main>
   </div>
@@ -60,9 +60,6 @@ export default {
     ListItem
   },
   computed: {
-    sortedItems () {
-
-    },
     items () {
       let items = []
       if (this.searchKey) {
@@ -91,8 +88,8 @@ export default {
     updateSearchKey ($event) {
       this.searchKey = $event.target.value
     },
-    activeItem (index) {
-      this.$store.commit('UPDATE_ACTIVE_STATUS', index)
+    activeItem (id) {
+      this.$store.commit('UPDATE_ACTIVE_STATUS', id)
     }
   }
 }
