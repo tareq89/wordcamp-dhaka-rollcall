@@ -13,6 +13,7 @@
           <option v-for="(sortParam, key) of sortParams" :key="key" :value="sortParam.value" :selected="sortParam.selected">{{ sortParam.display }}</option>
         </select>
       </div>
+      <div class="">{{$store.state.items.length}}</div>
       <div class="Search">
         <input class="Search__input" placeholder="Search" type="text" @input="updateSearchKey">
       </div>
@@ -67,7 +68,10 @@ export default {
       let items = []
       if (this.searchKey) {
         items = this.$store.state.items.filter(a => {
-          return a.name.toLowerCase().includes(this.searchKey.toLowerCase())
+          let resultOnName = a.name.toLowerCase().includes(this.searchKey.toLowerCase())
+          let resultOnreportingTime = a.expectedreportingTime.toLowerCase().includes(this.searchKey.toLowerCase())
+          let resultBio = a.bio.toLowerCase().includes(this.searchKey.toLowerCase())
+          return resultOnName || resultOnreportingTime || resultBio
         })
       } else {
         items = this.$store.state.items

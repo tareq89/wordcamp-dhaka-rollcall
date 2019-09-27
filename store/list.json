@@ -5,7 +5,7 @@
     "bio": "Project Developmet Manager at weDevs",
     "phoneNumber": "01771443388",
     "image": "~/assets/images/Saif_Hassan.jpg",
-    "expectedreportingTime": "8:45 AM",
+    "expectedreportingTime": "8:30 AM",
     "known": true,
     "active": false
   },
@@ -15,7 +15,7 @@
     "bio": "",
     "phoneNumber": "01771443388",
     "image": "~/assets/images/Saif_Hassan.jpg",
-    "expectedreportingTime": "8:45 AM",
+    "expectedreportingTime": "7:45 AM",
     "known": true,
     "active": false
   },
@@ -25,7 +25,7 @@
     "bio": "UX Engineer at Deligram",
     "phoneNumber": "01771443388",
     "image": "~/assets/images/Saif_Hassan.jpg",
-    "expectedreportingTime": "8:45 AM",
+    "expectedreportingTime": "6:45 AM",
     "known": true,
     "active": false
   },
@@ -35,7 +35,7 @@
     "bio": "UX at Deligram",
     "phoneNumber": "01771443388",
     "image": "~/assets/images/Saif_Hassan.jpg",
-    "expectedreportingTime": "8:45 AM",
+    "expectedreportingTime": "8:30 AM",
     "known": false,
     "active": false
   },
@@ -45,7 +45,7 @@
     "bio": "SE at Deligram",
     "phoneNumber": "01771443388",
     "image": "~/assets/images/Saif_Hassan.jpg",
-    "expectedreportingTime": "8:45 AM",
+    "expectedreportingTime": "6:45 PM",
     "known": false,
     "active": false
   }
