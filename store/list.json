@@ -1,11 +1,11 @@
 [
   {
     "id": "1",
-    "name": "Z Tareq Aziz",
+    "name": "Zaff Tareq Aziz",
     "bio": "Project Developmet Manager at weDevs",
     "phoneNumber": "01771443388",
     "image": "~/assets/images/Saif_Hassan.jpg",
-    "expectedreportingTime": "8:30 AM",
+    "expectedreportingTime": "6:00 AM",
     "known": true,
     "active": false
   },
