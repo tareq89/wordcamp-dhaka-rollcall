@@ -28,11 +28,48 @@
   border-radius: 36px
   overflow: hidden
   margin-left: 20px
+  
 .Heading
   font-size: 24px
   font-weight: 700
   margin-left: 15px
+  flex: 1
 
+.Counter
+  width: 36px
+  height: 36px
+  background-color: #F0F0F0
+  margin-right: 20px
+  border-radius: 36px
+  font-size: 16px
+  font-weight: 700
+  color: $black
+  text-align: center
+  line-height: 36px
+
+
+select,
+input,
+textarea 
+  width: 100%
+  box-sizing: border-box
+
+
+.Sort 
+  // width: 36px
+  height: 36px
+  // background-color: #F0F0F0
+  margin-right: 8px
+  border-radius: 36px
+  text-align: right
+  line-height: 36px
+  font-size: 10px
+  // opacity: 0
+  select,
+  option
+    font-size: inherit
+    text-align: inherit
+    height: 36px
 
 
 .Search
@@ -73,6 +110,9 @@
         #{$root}__status
           &::before
             background-image: url(~assets/icons/check-active.svg)
+      // #{$root}__expectedreporting
+      //   display: none
+      
 
 
       
@@ -132,9 +172,9 @@
     color: #9E9E9E
     position: absolute
     right: 0
-    top: 10
+    top: 0
     line-height: 1
-    margin-top: 22px
+    margin-top: 22px + 15
   &__expectedreporting
     font-size: 12px
     color: #9E9E9E

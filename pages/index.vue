@@ -5,15 +5,14 @@
         <img src="~/assets/images/logo.jpg" alt="Logo">
       </div>
       <div class="Heading">Volunteer List</div>
-    </header>
-    <main class="App__main">
-      <div class="Heading">Sort by</div>
-      <div>
+      <div class="Sort">
         <select v-model="sortBy">
           <option v-for="(sortParam, key) of sortParams" :key="key" :value="sortParam.value" :selected="sortParam.selected">{{ sortParam.display }}</option>
         </select>
       </div>
-      <div class="">{{$store.state.items.length}}</div>
+      <div class="Counter">{{$store.state.items.length}}</div>
+    </header>
+    <main class="App__main">
       <div class="Search">
         <input class="Search__input" placeholder="Search" type="text" @input="updateSearchKey">
       </div>
