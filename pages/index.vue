@@ -2,7 +2,7 @@
   <div class="App">
     <header class="App__header">
       <div class="Logo">
-        <img src="~/assets/images/logo.jpg" alt="Logo">
+        <img src="/images/logo.jpg" alt="Logo">
       </div>
       <div class="Heading">Volunteer List</div>
       <div class="Sort">
