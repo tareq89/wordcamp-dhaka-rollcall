@@ -534,7 +534,7 @@
  {
    "id": 39,
    "name": "Bishwajit Mondal",
-   "bio": "Speaker",
+   "bio": "Sponsor",
    "phoneNumber": "+8801712755278",
    "image": "/images/Bishwajit_Mondal.jpg",
    "expectedreportingTime": "6:30 am",
@@ -548,9 +548,9 @@
  {
    "id": 40,
    "name": "Mahmudul Hasan Shaon",
-   "bio": "AV",
+   "bio": "Audio/Video",
    "phoneNumber": "+8801712623276",
-   "image": "/images/imSrabon_Hasanage.jpg",
+   "image": "/images/Srabon_Hasan.jpg",
    "expectedreportingTime": "6:30 am",
    "known": true,
    "active": false,
@@ -562,7 +562,7 @@
  {
    "id": 41,
    "name": "Md Nahid Hasan",
-   "bio": "AV",
+   "bio": "Audio/Video",
    "phoneNumber": "01733946896",
    "image": "",
    "expectedreportingTime": "",
@@ -576,7 +576,7 @@
  {
    "id": 42,
    "name": "Tarek mahmud",
-   "bio": "AV",
+   "bio": "Audio/Video",
    "phoneNumber": "01611227005",
    "image": "",
    "expectedreportingTime": "",
