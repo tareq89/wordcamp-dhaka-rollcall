@@ -8,11 +8,15 @@ export default ({store, isHMR, redirect, route, params}) => {
     let updatedItems
     if (store.state.items.length > 0) {
       updatedItems = items.filter(item => {
-        return store.state.items.find(sItem => {
-          return sItem.id !== item.id
-        })
+        let found = false
+        for (let sItem of store.state.items) {
+          if (item.id === sItem.id) {
+            found = true
+            break
+          }
+        }
+        return !found
       })
-      console.table(updatedItems)
     } else {
       updatedItems = items
     }

@@ -1,42 +1,52 @@
 [
   {
     "id": "1",
-    "name": "Tareq Aziz",
+    "name": "Z Tareq Aziz",
     "bio": "Project Developmet Manager at weDevs",
     "phoneNumber": "01771443388",
     "image": "~/assets/images/Saif_Hassan.jpg",
-    "reportingTime": "",
+    "reportingTime": null,
     "known": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2",
-    "name": "Foysal Zafree",
+    "name": "I Foysal Zafree",
     "bio": "",
     "phoneNumber": "01771443388",
     "image": "~/assets/images/Saif_Hassan.jpg",
-    "reportingTime": "6:30 am",
+    "reportingTime": null,
     "known": true,
     "active": false
   },
   {
     "id": "3",
-    "name": "Foysal Zafree",
+    "name": "A Foysal Zafree",
     "bio": "UX Engineer at Deligram",
     "phoneNumber": "01771443388",
     "image": "~/assets/images/Saif_Hassan.jpg",
-    "reportingTime": "6:30 am",
+    "reportingTime": null,
     "known": true,
-    "active": true
+    "active": false
   },
   {
     "id": "4",
-    "name": "Shihan Alam",
+    "name": "C Shihan Alam",
     "bio": "UX at Deligram",
     "phoneNumber": "01771443388",
     "image": "~/assets/images/Saif_Hassan.jpg",
-    "reportingTime": "6:30 am",
-    "known": true,
-    "active": true
+    "reportingTime": null,
+    "known": false,
+    "active": false
+  },
+  {
+    "id": "5",
+    "name": "B Nahid Hasan",
+    "bio": "SE at Deligram",
+    "phoneNumber": "01771443388",
+    "image": "~/assets/images/Saif_Hassan.jpg",
+    "reportingTime": null,
+    "known": false,
+    "active": false
   }
 ]
