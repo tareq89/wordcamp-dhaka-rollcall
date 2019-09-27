@@ -9,12 +9,12 @@
       <div class="VolunteerList__expectedreporting">{{ item.expectedreportingTime }}</div>
       <div class="VolunteerList__reporting">{{ item.reportingTime }}</div>
     </div>
-    <div class="VolunteerList__status" @click="$emit('toggleActivate', index)"></div>
+    <div class="VolunteerList__status" @click="$emit('toggleActivate', item.id)"></div>
   </div>
 </template>
 
 <script>
 export default {
-  props: ['item', 'index']
+  props: ['item']
 }
 </script>
