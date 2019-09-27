@@ -6,6 +6,7 @@
     <div class="VolunteerList__copy">
       <a class="VolunteerList__name" :href="`tel:+${item.phoneNumber}`">{{ item.name }}</a>
       <div class="VolunteerList__bio">{{ item.bio }}</div>
+      <div class="VolunteerList__expectedreporting">{{ item.expectedreportingTime }}</div>
       <div class="VolunteerList__reporting">{{ item.reportingTime }}</div>
     </div>
     <div class="VolunteerList__status" @click="$emit('toggleActivate', index)"></div>

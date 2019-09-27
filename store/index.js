@@ -9,6 +9,7 @@ export default () => {
       MERGE_ITEMS (state, items) {
         items = items.map(i => {
           i.reportingTimeStamp = 0
+          i.reportingTime = null
           return i
         })
         state.items = [...state.items, ...items]
@@ -19,7 +20,7 @@ export default () => {
           state.items[index].reportingTime = new Date().toLocaleTimeString('en-US', { hour: 'numeric', hour12: true, minute: 'numeric' })
           state.items[index].reportingTimeStamp = Date.now()
         } else {
-          state.items[index].reportingTime = 'Absent'
+          state.items[index].reportingTime = null
           state.items[index].reportingTimeStamp = 0
         }
         

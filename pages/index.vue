@@ -74,7 +74,6 @@ export default {
       }
       return items.sort((a, b) => {
         if (this.sortBy === 'name') {
-          console.log('sorting')
           if (a[this.sortBy][0] > b[this.sortBy][0]) return 1
           if (a[this.sortBy][0] < b[this.sortBy][0]) return -1
         } else {
