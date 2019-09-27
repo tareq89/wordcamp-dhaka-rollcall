@@ -1,7 +1,9 @@
 <template>
   <div :class="['VolunteerList__item', {'VolunteerList__item--active': item.active}, {'VolunteerList__item--unknown': !item.known}]">
     <div class="VolunteerList__imageWrapper">
-      <img :src="`${item.image}`" :alt="item.name">
+      <a :href="item.facebookProfileLink" target="_blank">
+        <img :src="`${item.image}`" :alt="item.name">
+      </a>
     </div>
     <div class="VolunteerList__copy">
       <a class="VolunteerList__name" :href="`tel:+${item.phoneNumber}`">{{ item.name }}</a>

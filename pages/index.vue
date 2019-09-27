@@ -36,17 +36,22 @@ export default {
           display: 'Name',
           value: 'name',
           selected: true
-        }, 
+        },
         {
           display: 'Active',
           value: 'active',
           selected: false
-        }, 
+        },
         {
           display: 'Known',
           value: 'known',
           selected: false
-        }, 
+        },
+        {
+          display: 'Unknown',
+          value: 'unknown',
+          selected: false
+        },
         {
           display: 'Reporting',
           value: 'reportingTimeStamp',
@@ -62,7 +67,7 @@ export default {
   computed: {
     items () {
       let items = []
-      if (this.searchKey) {
+      if (this.searchKey && this.searchKey.trim()) {
         items = this.$store.state.items.filter(a => {
           let resultOnName = a.name.toLowerCase().includes(this.searchKey.toLowerCase())
           let resultOnreportingTime = a.expectedreportingTime.toLowerCase().includes(this.searchKey.toLowerCase())
@@ -76,6 +81,9 @@ export default {
         if (this.sortBy === 'name') {
           if (a[this.sortBy][0] > b[this.sortBy][0]) return 1
           if (a[this.sortBy][0] < b[this.sortBy][0]) return -1
+        } else if (this.sortBy === 'unknown') {
+          if (a.known > b.known) return 1
+          if (a.known < b.known) return -1
         } else {
           if (a[this.sortBy] > b[this.sortBy]) return -1
           if (a[this.sortBy] < b[this.sortBy]) return 1
